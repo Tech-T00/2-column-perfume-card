@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: pink;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 420px;
+    width: 250px;
+    
+}
+
+.card2{
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.card2 .perfume{
+    padding: 10px;
+    
+}
+.card2 .floral{
+    padding: 10px;
+}
+.card2 h1{
+    padding: 10px;
+}
+
+.card2 .green{
+    color: darkgreen;
+    
+}
+.card1 img{
+    border-radius: 10px 0 0 10px;
+    background-color: none;
+}
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
+.card2 .dollars{
+    display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+    
+}
+
+@media screen and (max-width:992px) {
+    .card-container{
+        flex-direction: column;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}
+
+button{
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 0 0 0 30px;
+}
+
+.card button:hover{
+    background: greenyellow;
+    border: 2px solid white;
+    color: white;
+
+
+}
